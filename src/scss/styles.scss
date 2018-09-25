@@ -76,6 +76,9 @@ body {
 					top: 50%;
 					transform: translateY(-50%);
 				}
+				&:hover{
+					background-color: #939393;
+				}
 			}
 
 			.long-d {
@@ -99,4 +102,16 @@ body {
 		text-align: center;
 		padding: 20px;
 	}
+}
+
+.buttonanimation{
+	animation-name: animation;
+	animation-timing-function: ease-out;
+  animation-duration: 0.4s;
+}
+
+@keyframes animation {
+    0% {background-color: #939393;}
+    50% {background-color: #cdcdcd;}
+		100% {background-color: #939393;}
 }

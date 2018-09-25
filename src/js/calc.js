@@ -50,11 +50,13 @@ $(function() {
   });
 
   $('.dot').click(function() {
-    if (($('.screen').html() == '+' || $('.screen').html() == '-' || $('.screen').html() == '*' || $('.screen').html() == '/') && screend.indexOf('.') < 0) {
+    if (($('.screen').html() == '+' || $('.screen').html() == '-' || $('.screen').html() == '*' || $('.screen').html() == '/' ) && screend.indexOf('.') < 0) {
+      screend.push(0);
       $('.screen').html('0');
       $('.history').append('0');
     }
     if (screend.indexOf('.') < 0) {
+      screend.push(0);
       screend.push($(this).children().closest('p').html());
       $('.screen').append($(this).children().closest('p').html());
       $('.history').append($(this).children().closest('p').html());
@@ -162,8 +164,14 @@ $(function() {
 
 });
 
+// BUTTON CLICK SIMPLE ANIMATION
+$('.button').click(function(){
+  $(this).addClass('buttonanimation');
+  setTimeout(()=>{
+    $(this).removeClass('buttonanimation');
+  },400);
+});
 
-// SHOULD USE BUTTONS IN HTML?
-// WHAT IF DOT COMES FIRST? . + . -> NaN problem
-// BUTTONS ANIMATIONS
+
+// SHOULD USE BUTTONS IN HTML
 // PRECISION BUG?

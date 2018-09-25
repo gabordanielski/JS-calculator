@@ -61,6 +61,8 @@ body {
           position: relative;
           top: 50%;
           transform: translateY(-50%); }
+        .container .calculator .row .button:hover {
+          background-color: #939393; }
       .container .calculator .row .long-d {
         height: 100px;
         position: absolute;
@@ -73,3 +75,16 @@ body {
   .container footer {
     text-align: center;
     padding: 20px; }
+
+.buttonanimation {
+  animation-name: animation;
+  animation-timing-function: ease-out;
+  animation-duration: 0.4s; }
+
+@keyframes animation {
+  0% {
+    background-color: #939393; }
+  50% {
+    background-color: #cdcdcd; }
+  100% {
+    background-color: #939393; } }
