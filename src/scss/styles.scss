@@ -8,8 +8,7 @@ body {
 }
 
 .container {
-	margin: 150px auto 0;
-	width: 600px;
+	margin: 60px auto 0;
 
 	.calculator {
 		width: 280px;
@@ -76,9 +75,6 @@ body {
 					top: 50%;
 					transform: translateY(-50%);
 				}
-				&:hover{
-					background-color: #939393;
-				}
 			}
 
 			.long-d {
@@ -111,7 +107,7 @@ body {
 }
 
 @keyframes animation {
-    0% {background-color: #939393;}
-    50% {background-color: #cdcdcd;}
-		100% {background-color: #939393;}
+    0% {background-color: #313131;}
+    50% {background-color: #5f5f5f;}
+		100% {background-color: #313131;}
 }
