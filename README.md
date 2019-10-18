@@ -4,6 +4,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies-tools-and-features)
+* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -16,12 +17,10 @@ Calculator app created with Javascript(jQuery) and Sass.
 * Javascript
 * jQuery
 * Sass
-* AJAX
-* API usage
 * Gulp
 * Npm 
 
-## Featurees
+## Features
 To-do list:
 * CE button
 
